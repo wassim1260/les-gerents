@@ -1,0 +1,155 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: linear-gradient(to right, #8e2de2, #4a00e0);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+.form-container {
+  background: #ffffff;
+  padding: 30px 40px;
+  border-radius: 15px;
+  width: 100%;
+  max-width: 800px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  margin-bottom: 10px;
+  color: #4a00e0;
+}
+
+p {
+  margin-bottom: 20px;
+  color: #444;
+}
+
+.form-row {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.form-group {
+  flex: 1;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+input, select, textarea {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+}
+
+button {
+  width: 100%;
+  padding: 15px;
+  background: #4a00e0;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #3600b3;
+}
+
+#confirmation {
+  margin-top: 20px;
+  color: green;
+  font-weight: bold;
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Creative select style */
+.creative-select select {
+  background-color: #f7f7ff;
+  border: 2px solid #4a00e0;
+  color: #333;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+.creative-select select:focus {
+  border-color: #8e2de2;
+  outline: none;
+  box-shadow: 0 0 8px rgba(78, 0, 255, 0.3);
+}
+
+.creative-select option {
+  padding: 10px;
+  background-color: #fff;
+  color: #222;
+}
+.error {
+  border: 2px solid red !important;
+  background-color: #ffe5e5;
+}
+/* CSS pour la page de bienvenue */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f7f7f7;
+  margin: 0;
+  padding: 0;
+}
+
+.welcome-container {
+  width: 100%;
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+h1 {
+  color: #28a745;
+}
+
+p {
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+.btn-back {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.btn-back:hover {
+  background-color: #0056b3;
+}
+
+

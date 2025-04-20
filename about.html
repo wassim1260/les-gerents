@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>INSCRIPTION GITEX AFRICA 2026</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js"></script>
+</head>
+<body>
+  <div class="form-container">
+    <h2>🎫 Inscription à GITEX Africa 2026</h2>
+    <p>Veuillez remplir le formulaire ci-dessous pour participer à l'événement.</p>
+
+    <form id="gitexForm" action="traitement.php" method="POST">
+      <div class="form-row">
+        <div class="form-group">
+          <label>Nom complet *</label>
+          <input type="text" name="nom" required />
+        </div>
+        <div class="form-group">
+          <label>Email *</label>
+          <input type="email" name="email" required />
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label>Téléphone *</label>
+          <input type="tel" name="telephone" required />
+        </div>
+        <div class="form-group">
+          <label>Pays *</label>
+          <input type="text" name="pays" required />
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label>Entreprise / Startup</label>
+          <input type="text" name="entreprise" />
+        </div>
+        <div class="form-group">
+          <label>Poste</label>
+          <input type="text" name="poste" />
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>Objectif de participation *</label>
+        <select name="objectif" required>
+          <option value="">-- Sélectionnez --</option>
+          <option value="visiteur">Visiter l'événement</option>
+          <option value="exposant">Exposer une solution</option>
+          <option value="investisseur">Chercher à investir</option>
+          <option value="media">Média / Presse</option>
+        </select>
+      </div>
+
+      <div class="form-group creative-select">
+        <label>🌐 Session à laquelle vous souhaitez assister *</label>
+        <select name="session" required>
+          <option value="">-- Sélectionnez une session --</option>
+          <option value="Cloud x IoT x Data">Cloud x IoT x Data</option>
+          <option value="AI Everything">AI Everything</option>
+          <option value="Cybersecurity">Cybersecurity</option>
+          <option value="Digital Cities">Digital Cities</option>
+          <option value="Future of Finance">Future of Finance</option>
+          <option value="Telecoms / Network Infrastructure">Telecoms / Network Infrastructure</option>
+          <option value="Sustainability">Sustainability</option>
+          <option value="Digital Health">Digital Health</option>
+          <option value="Mobility">Mobility</option>
+          <option value="SportsTech">SportsTech</option>
+          <option value="Data Centres">Data Centres</option>
+          <option value="Edtech">Edtech</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label>Message complémentaire</label>
+        <textarea name="message" rows="4" placeholder="Indiquez vos attentes, votre projet... (facultatif)"></textarea>
+      </div>
+
+      <button type="submit">✅ Envoyer l'inscription</button>
+    </form>
+
+    <p id="confirmation" class="hidden">Merci ! Votre inscription a bien été envoyée ✅</p>
+  </div>
+</body>
+</html>
