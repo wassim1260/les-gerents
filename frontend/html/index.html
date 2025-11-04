@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Service de transport premium pour groupes hôteliers au Maroc">
+    <meta name="keywords" content="transport, taxi, chauffeur, aéroport, Maroc, Casablanca, Rabat">
+    <title>Hotel Transport Management - Service de Transport Premium au Maroc</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">
+                <i class="bi bi-geo-alt-fill"></i> HTM Transport
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#villes">Villes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#vehicules">Véhicules</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-light text-primary px-3 ms-2" href="login.html">
+                            <i class="bi bi-box-arrow-in-right"></i> Connexion
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-warning px-3 ms-2" href="register.html">
+                            <i class="bi bi-person-plus"></i> Inscription
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding-top: 120px; padding-bottom: 80px; color: white;">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <h1 class="display-3 fw-bold mb-4">Transport Premium au Maroc</h1>
+                    <p class="lead mb-4">Réservez votre transport en toute simplicité. Service de qualité pour tous vos déplacements au Maroc.</p>
+                    <div class="d-flex gap-3">
+                        <a href="#booking" class="btn btn-light btn-lg px-4">
+                            <i class="bi bi-calendar-check"></i> Réserver Maintenant
+                        </a>
+                        <a href="#services" class="btn btn-outline-light btn-lg px-4">
+                            En Savoir Plus
+                        </a>
+                    </div>
+                    <div class="mt-4">
+                        <div class="d-flex gap-4 text-white">
+                            <div>
+                                <h3 class="fw-bold mb-0">500+</h3>
+                                <small>Clients Satisfaits</small>
+                            </div>
+                            <div>
+                                <h3 class="fw-bold mb-0">50+</h3>
+                                <small>Chauffeurs</small>
+                            </div>
+                            <div>
+                                <h3 class="fw-bold mb-0">10</h3>
+                                <small>Villes</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="hero-image">
+                        <img src="images/hero-car.png" alt="Transport" class="img-fluid" style="filter: drop-shadow(0 10px 30px rgba(0,0,0,0.3));">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Booking Section -->
+    <section id="booking" class="py-5" style="margin-top: -50px;">
+        <div class="container">
+            <div class="card shadow-lg border-0">
+                <div class="card-body p-4">
+                    <h3 class="mb-4 text-center">Réservation Rapide</h3>
+                    <form id="quickBookingForm">
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label class="form-label">Ville de départ</label>
+                                <select class="form-select" required>
+                                    <option value="">Choisir une ville</option>
+                                    <option>Casablanca</option>
+                                    <option>Rabat</option>
+                                    <option>Tanger</option>
+                                    <option>Marrakech</option>
+                                    <option>Agadir</option>
+                                    <option>Al Hoceima</option>
+                                    <option>Dakhla</option>
+                                    <option>Nador</option>
+                                    <option>Fès</option>
+                                    <option>Ouarzazate</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">Ville d'arrivée</label>
+                                <select class="form-select" required>
+                                    <option value="">Choisir une ville</option>
+                                    <option>Casablanca</option>
+                                    <option>Rabat</option>
+                                    <option>Tanger</option>
+                                    <option>Marrakech</option>
+                                    <option>Agadir</option>
+                                    <option>Al Hoceima</option>
+                                    <option>Dakhla</option>
+                                    <option>Nador</option>
+                                    <option>Fès</option>
+                                    <option>Ouarzazate</option>
+                                </select>
+                            </div>
+                            <div class="col-md-4">
+                                <label class="form-label">Date</label>
+                                <input type="date" class="form-control" required>
+                            </div>
+                            <div class="col-md-4">
+                                <label class="form-label">Heure</label>
+                                <input type="time" class="form-control" required>
+                            </div>
+                            <div class="col-md-4">
+                                <label class="form-label">Passagers</label>
+                                <input type="number" class="form-control" min="1" max="20" value="1" required>
+                            </div>
+                            <div class="col-12">
+                                <button type="submit" class="btn btn-primary btn-lg w-100">
+                                    <i class="bi bi-search"></i> Rechercher des Véhicules
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold">Nos Services</h2>
+                <p class="lead text-muted">Des solutions de transport pour tous vos besoins</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 border-0 shadow-sm hover-card">
+                        <div class="card-body text-center p-4">
+                            <div class="service-icon mb-3">
+                                <i class="bi bi-airplane-fill" style="font-size: 3rem; color: #667eea;"></i>
+                            </div>
+                            <h4 class="mb-3">Transfert Aéroport</h4>
+                            <p class="text-muted">Service de navette depuis et vers l'aéroport. Ponctuel et fiable.</p>
+                            <a href="login.html" class="btn btn-outline-primary">Réserver</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 border-0 shadow-sm hover-card">
+                        <div class="card-body text-center p-4">
+                            <div class="service-icon mb-3">
+                                <i class="bi bi-taxi-front-fill" style="font-size: 3rem; color: #f093fb;"></i>
+                            </div>
+                            <h4 class="mb-3">Taxi</h4>
+                            <p class="text-muted">Service de taxi disponible 24/7 dans toutes les villes du Maroc.</p>
+                            <a href="login.html" class="btn btn-outline-primary">Réserver</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 border-0 shadow-sm hover-card">
+                        <div class="card-body text-center p-4">
+                            <div class="service-icon mb-3">
+                                <i class="bi bi-truck-front-fill" style="font-size: 3rem; color: #fa8bff;"></i>
+                            </div>
+                            <h4 class="mb-3">Van</h4>
+                            <p class="text-muted">Transport de groupe avec véhicules spacieux et confortables.</p>
+                            <a href="login.html" class="btn btn-outline-primary">Réserver</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 border-0 shadow-sm hover-card">
+                        <div class="card-body text-center p-4">
+                            <div class="service-icon mb-3">
+                                <i class="bi bi-bus-front-fill" style="font-size: 3rem; color: #2575fc;"></i>
+                            </div>
+                            <h4 class="mb-3">Bus</h4>
+                            <p class="text-muted">Solutions pour grands groupes avec bus modernes et équipés.</p>
+                            <a href="login.html" class="btn btn-outline-primary">Réserver</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mx-auto">
+                    <div class="card h-100 border-0 shadow-sm hover-card" style="border: 2px solid #ffd700 !important;">
+                        <div class="card-body text-center p-4">
+                            <div class="service-icon mb-3">
+                                <i class="bi bi-star-fill" style="font-size: 3rem; color: #ffd700;"></i>
+                            </div>
+                            <h4 class="mb-3">Chauffeur Privé</h4>
+                            <p class="text-muted">Service VIP avec chauffeur professionnel et véhicule de luxe.</p>
+                            <a href="login.html" class="btn btn-warning">Réserver VIP</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Villes Section -->
+    <section id="villes" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold">Nous Couvrons Tout le Maroc</h2>
+                <p class="lead text-muted">Service disponible dans les principales villes</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="city-card text-center p-3 rounded shadow-sm bg-white">
+                        <i class="bi bi-geo-alt-fill text-primary" style="font-size: 2rem;"></i>
+                        <h5 class="mt-2">Casablanca</h5>
+                        <small class="text-muted">الدار البيضاء</small>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="city-card text-center p-3 rounded shadow-sm bg-white">
+                        <i class="bi bi-geo-alt-fill text-success" style="font-size: 2rem;"></i>
+                        <h5 class="mt-2">Rabat</h5>
+                        <small class="text-muted">الرباط</small>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="city-card text-center p-3 rounded shadow-sm bg-white">
+                        <i class="bi bi-geo-alt-fill text-info" style="font-size: 2rem;"></i>
+                        <h5 class="mt-2">Tanger</h5>
+                        <small class="text-muted">طنجة</small>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="city-card text-center p-3 rounded shadow-sm bg-white">
+                        <i class="bi bi-geo-alt-fill text-danger" style="font-size: 2rem;"></i>
+                        <h5 class="mt-2">Marrakech</h5>
+                        <small class="text-muted">مراكش</small>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="city-card text-center p-3 rounded shadow-sm bg-white">
+                        <i class="bi bi-geo-alt-fill text-warning" style="font-size: 2rem;"></i>
+                        <h5 class="mt-2">Agadir</h5>
+                        <small class="text-muted">أكادير</small>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="city-card text-center p-3 rounded shadow-sm bg-white">
+                        <i class="bi bi-geo-alt-fill text-purple" style="font-size: 2rem;"></i>
+                        <h5 class="mt-2">Fès</h5>
+                        <small class="text-muted">فاس</small>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="city-card text-center p-3 rounded shadow-sm bg-white">
+                        <i class="bi bi-geo-alt-fill text-secondary" style="font-size: 2rem;"></i>
+                        <h5 class="mt-2">Al Hoceima</h5>
+                        <small class="text-muted">الحسيمة</small>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="city-card text-center p-3 rounded shadow-sm bg-white">
+                        <i class="bi bi-geo-alt-fill text-dark" style="font-size: 2rem;"></i>
+                        <h5 class="mt-2">Dakhla</h5>
+                        <small class="text-muted">الداخلة</small>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="city-card text-center p-3 rounded shadow-sm bg-white">
+                        <i class="bi bi-geo-alt-fill text-primary" style="font-size: 2rem;"></i>
+                        <h5 class="mt-2">Nador</h5>
+                        <small class="text-muted">الناظور</small>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="city-card text-center p-3 rounded shadow-sm bg-white">
+                        <i class="bi bi-geo-alt-fill text-success" style="font-size: 2rem;"></i>
+                        <h5 class="mt-2">Ouarzazate</h5>
+                        <small class="text-muted">ورزازات</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Véhicules Section -->
+    <section id="vehicules" class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold">Notre Flotte de Véhicules</h2>
+                <p class="lead text-muted">Choisissez le niveau de confort qui vous convient</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 border-0 shadow">
+                        <div class="card-header bg-secondary text-white text-center">
+                            <h4>Standard</h4>
+                        </div>
+                        <div class="card-body">
+                            <ul class="list-unstyled">
+                                <li><i class="bi bi-check-circle-fill text-success"></i> Climatisation</li>
+                                <li><i class="bi bi-check-circle-fill text-success"></i> Radio</li>
+                                <li><i class="bi bi-check-circle-fill text-success"></i> Confortable</li>
+                            </ul>
+                            <div class="text-center mt-3">
+                                <h3 class="text-primary">À partir de 50 MAD</h3>
+                                <a href="login.html" class="btn btn-outline-secondary">Choisir</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 border-0 shadow">
+                        <div class="card-header bg-info text-white text-center">
+                            <h4>Confort</h4>
+                        </div>
+                        <div class="card-body">
+                            <ul class="list-unstyled">
+                                <li><i class="bi bi-check-circle-fill text-success"></i> Tout Standard +</li>
+                                <li><i class="bi bi-check-circle-fill text-success"></i> WiFi</li>
+                                <li><i class="bi bi-check-circle-fill text-success"></i> Eau gratuite</li>
+                            </ul>
+                            <div class="text-center mt-3">
+                                <h3 class="text-primary">À partir de 70 MAD</h3>
+                                <a href="login.html" class="btn btn-info text-white">Choisir</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 border-0 shadow">
+                        <div class="card-header bg-primary text-white text-center">
+                            <h4>Luxe</h4>
+                        </div>
+                        <div class="card-body">
+                            <ul class="list-unstyled">
+                                <li><i class="bi bi-check-circle-fill text-success"></i> Tout Confort +</li>
+                                <li><i class="bi bi-check-circle-fill text-success"></i> Sièges cuir</li>
+                                <li><i class="bi bi-check-circle-fill text-success"></i> Snacks</li>
+                            </ul>
+                            <div class="text-center mt-3">
+                                <h3 class="text-primary">À partir de 100 MAD</h3>
+                                <a href="login.html" class="btn btn-primary">Choisir</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 border-0 shadow" style="border: 3px solid gold !important;">
+                        <div class="card-header bg-warning text-dark text-center">
+                            <h4><i class="bi bi-star-fill"></i> VIP <i class="bi bi-star-fill"></i></h4>
+                        </div>
+                        <div class="card-body">
+                            <ul class="list-unstyled">
+                                <li><i class="bi bi-check-circle-fill text-success"></i> Tout Luxe +</li>
+                                <li><i class="bi bi-check-circle-fill text-success"></i> Champagne</li>
+                                <li><i class="bi bi-check-circle-fill text-success"></i> Service exclusif</li>
+                            </ul>
+                            <div class="text-center mt-3">
+                                <h3 class="text-warning">À partir de 200 MAD</h3>
+                                <a href="login.html" class="btn btn-warning">Choisir VIP</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pourquoi Nous Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold">Pourquoi Nous Choisir ?</h2>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="text-center">
+                        <div class="mb-3">
+                            <i class="bi bi-shield-check" style="font-size: 4rem; color: #667eea;"></i>
+                        </div>
+                        <h4>Sécurité Garantie</h4>
+                        <p class="text-muted">Tous nos chauffeurs sont vérifiés et formés pour votre sécurité.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="text-center">
+                        <div class="mb-3">
+                            <i class="bi bi-clock-history" style="font-size: 4rem; color: #764ba2;"></i>
+                        </div>
+                        <h4>Disponible 24/7</h4>
+                        <p class="text-muted">Notre service est disponible à tout moment, jour et nuit.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="text-center">
+                        <div class="mb-3">
+                            <i class="bi bi-currency-dollar" style="font-size: 4rem; color: #f093fb;"></i>
+                        </div>
+                        <h4>Prix Compétitifs</h4>
+                        <p class="text-muted">Tarifs transparents et compétitifs sans frais cachés.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-5" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white;">
+        <div class="container text-center">
+            <h2 class="display-5 fw-bold mb-4">Prêt à Réserver ?</h2>
+            <p class="lead mb-4">Rejoignez des centaines de clients satisfaits</p>
+            <div class="d-flex gap-3 justify-content-center">
+                <a href="register.html" class="btn btn-warning btn-lg px-5">
+                    <i class="bi bi-person-plus"></i> S'inscrire
+                </a>
+                <a href="login.html" class="btn btn-light btn-lg px-5">
+                    <i class="bi bi-box-arrow-in-right"></i> Se Connecter
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold">Contactez-Nous</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="card border-0 shadow h-100">
+                        <div class="card-body p-4">
+                            <h4 class="mb-4">Informations de Contact</h4>
+                            <div class="mb-3">
+                                <i class="bi bi-telephone-fill text-primary"></i>
+                                <strong class="ms-2">Téléphone:</strong>
+                                <p class="ms-4">+212 5XX-XXXXXX</p>
+                            </div>
+                            <div class="mb-3">
+                                <i class="bi bi-envelope-fill text-primary"></i>
+                                <strong class="ms-2">Email:</strong>
+                                <p class="ms-4">contact@hoteltransport.ma</p>
+                            </div>
+                            <div class="mb-3">
+                                <i class="bi bi-geo-alt-fill text-primary"></i>
+                                <strong class="ms-2">Adresse:</strong>
+                                <p class="ms-4">Casablanca, Maroc</p>
+                            </div>
+                            <div class="mt-4">
+                                <h5>Suivez-nous</h5>
+                                <div class="d-flex gap-3">
+                                    <a href="#" class="btn btn-outline-primary btn-sm"><i class="bi bi-facebook"></i></a>
+                                    <a href="#" class="btn btn-outline-info btn-sm"><i class="bi bi-twitter"></i></a>
+                                    <a href="#" class="btn btn-outline-danger btn-sm"><i class="bi bi-instagram"></i></a>
+                                    <a href="#" class="btn btn-outline-success btn-sm"><i class="bi bi-whatsapp"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card border-0 shadow h-100">
+                        <div class="card-body p-4">
+                            <h4 class="mb-4">Envoyez-nous un Message</h4>
+                            <form>
+                                <div class="mb-3">
+                                    <input type="text" class="form-control" placeholder="Nom complet" required>
+                                </div>
+                                <div class="mb-3">
+                                    <input type="email" class="form-control" placeholder="Email" required>
+                                </div>
+                                <div class="mb-3">
+                                    <input type="tel" class="form-control" placeholder="Téléphone" required>
+                                </div>
+                                <div class="mb-3">
+                                    <textarea class="form-control" rows="4" placeholder="Votre message" required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary w-100">
+                                    <i class="bi bi-send"></i> Envoyer
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5><i class="bi bi-geo-alt-fill"></i> HTM Transport</h5>
+                    <p class="text-muted">Service de transport premium pour groupes hôteliers au Maroc.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="mb-0">&copy; 2024 Hotel Transport Management. Tous droits réservés.</p>
+                    <p class="text-muted small">Développé avec <i class="bi bi-heart-fill text-danger"></i> au Maroc</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+</body>
+</html>
